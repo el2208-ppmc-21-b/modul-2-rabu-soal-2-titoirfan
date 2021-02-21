@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "testcase1.csv\r\n0.15\r\n6",
+      "output": "Total angsuran bulan ke-1: Rp10088695.86\r\nTotal angsuran bulan ke-2: Rp9971385.44\r\nTotal angsuran bulan ke-3: Rp9854075.02\r\nTotal angsuran bulan ke-4: Rp9736764.60\r\nTotal angsuran bulan ke-5: Rp9619454.18\r\nTotal angsuran bulan ke-6: Rp9502143.75",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "02",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase2.csv\r\n0.01\r\n10",
+      "output": "Total angsuran bulan ke-1: Rp459598.33\r\nTotal angsuran bulan ke-2: Rp459218.50\r\nTotal angsuran bulan ke-3: Rp458838.67\r\nTotal angsuran bulan ke-4: Rp458458.83\r\nTotal angsuran bulan ke-5: Rp458079.00\r\nTotal angsuran bulan ke-6: Rp457699.17\r\nTotal angsuran bulan ke-7: Rp457319.33\r\nTotal angsuran bulan ke-8: Rp456939.50\r\nTotal angsuran bulan ke-9: Rp456559.67\r\nTotal angsuran bulan ke-10: Rp456179.83",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "03",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase3.csv\r\n0.2\r\n8",
+      "output": "Total angsuran bulan ke-1: Rp168470.00\r\nTotal angsuran bulan ke-2: Rp165992.50\r\nTotal angsuran bulan ke-3: Rp163515.00\r\nTotal angsuran bulan ke-4: Rp161037.50\r\nTotal angsuran bulan ke-5: Rp158560.00\r\nTotal angsuran bulan ke-6: Rp156082.50\r\nTotal angsuran bulan ke-7: Rp153605.00\r\nTotal angsuran bulan ke-8: Rp151127.50",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "04",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase4.csv\r\n0.05\r\n4",
+      "output": "Total angsuran bulan ke-1: Rp1363604.17\r\nTotal angsuran bulan ke-2: Rp1358015.63\r\nTotal angsuran bulan ke-3: Rp1352427.08\r\nTotal angsuran bulan ke-4: Rp1346838.54",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "05",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase5.csv\r\n0.02\r\n6",
+      "output": "Total angsuran bulan ke-1: Rp713901.67\r\nTotal angsuran bulan ke-2: Rp712723.61\r\nTotal angsuran bulan ke-3: Rp711545.56\r\nTotal angsuran bulan ke-4: Rp710367.50\r\nTotal angsuran bulan ke-5: Rp709189.44\r\nTotal angsuran bulan ke-6: Rp708011.39",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "06",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase6.csv\r\n0.04\r\n3",
+      "output": "Total angsuran bulan ke-1: Rp6599508.33\r\nTotal angsuran bulan ke-2: Rp6577727.78\r\nTotal angsuran bulan ke-3: Rp6555947.22",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "07",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase7.csv\r\n0.1\r\n4",
+      "output": "Total angsuran bulan ke-1: Rp797733.33\r\nTotal angsuran bulan ke-2: Rp791300.00\r\nTotal angsuran bulan ke-3: Rp784866.67\r\nTotal angsuran bulan ke-4: Rp778433.33",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "08",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase8.csv\r\n0.032\r\n6",
+      "output": "Total angsuran bulan ke-1: Rp409617.33\r\nTotal angsuran bulan ke-2: Rp408542.22\r\nTotal angsuran bulan ke-3: Rp407467.11\r\nTotal angsuran bulan ke-4: Rp406392.00\r\nTotal angsuran bulan ke-5: Rp405316.89\r\nTotal angsuran bulan ke-6: Rp404241.78",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "09",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase9.csv\r\n0.5\r\n60",
+      "output": "Tidak ada yang perlu dibayar !",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "testcase10.csv\r\n0.21\r\n4",
+      "output": "Total angsuran bulan ke-1: Rp843962.50\r\nTotal angsuran bulan ke-2: Rp830159.37\r\nTotal angsuran bulan ke-3: Rp816356.25\r\nTotal angsuran bulan ke-4: Rp802553.12",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
