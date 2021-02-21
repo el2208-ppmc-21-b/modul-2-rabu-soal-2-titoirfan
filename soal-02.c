@@ -20,39 +20,43 @@ int main()
     scanf(" %d", &waktu);
     if ((fptr = fopen(fileName, "r")) == NULL)
     {
+        // Exit if NULL
         printf("Error! opening file");
-        // Program exits if file pointer returns NULL.
-        exit(1);
     }
-    // reads text until newline is encountered
-    fgets(str, 100, fptr);
-    while (fgets(str, 100, fptr) != NULL)
+    else 
     {
-        char *token = strtok(str, ",");
-        while (token != NULL)
+        // reads text until newline is encountered
+        fgets(str, 100, fptr);
+        while (fgets(str, 100, fptr) != NULL)
         {
-            if (count % 4 == 2)
-                price = atoi(token);
-            if (count % 4 == 3)
-                qty = atoi(token);
-            token = strtok(NULL, ",");
-            count++;
+            char *token = strtok(str, ",");
+            while (token != NULL)
+            {
+                if (count % 4 == 2)
+                    price = atoi(token);
+                if (count % 4 == 3)
+                    qty = atoi(token);
+                token = strtok(NULL, ",");
+                count++;
+            }
+            totalPinjaman += price * qty;
         }
-        totalPinjaman += price * qty;
-    }
-    if ((int)totalPinjaman == 0)
-    {
-        printf("Tidak ada yang perlu dibayar !\n");
-        exit(1);
-    }
-    angsuranPokok = totalPinjaman / waktu;
-    sisaAngsuran = totalPinjaman;
-    for (int i = 0; i < waktu; i++)
-    {
-        angsuranBulan = (sisaAngsuran * bunga) / 12;
-        totalAngsuran = angsuranPokok + angsuranBulan;
-        sisaAngsuran -= angsuranPokok;
-        printf("Total angsuran bulan ke-%d: Rp%.2lf\n", i + 1, totalAngsuran);
+        if ((int)totalPinjaman == 0)
+        {
+            printf("Tidak ada yang perlu dibayar !\n");
+        }
+        else
+        {
+            angsuranPokok = totalPinjaman / waktu;
+            sisaAngsuran = totalPinjaman;
+            for (int i = 0; i < waktu; i++)
+            {
+                angsuranBulan = (sisaAngsuran * bunga) / 12;
+                totalAngsuran = angsuranPokok + angsuranBulan;
+                sisaAngsuran -= angsuranPokok;
+                printf("Total angsuran bulan ke-%d: Rp%.2lf\n", i + 1, totalAngsuran);
+            }
+        }
     }
     return 0;
 }
